@@ -116,7 +116,7 @@
   .hero .in{max-width:1040px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
   .hero .welcome{font-family:"Dancing Script",cursive;color:var(--pink-d);font-size:clamp(44px,8vw,84px);line-height:1;margin:0}
   .hero h1{margin:14px 0 6px;font-size:clamp(34px,6.5vw,56px);font-weight:900;letter-spacing:.06em;color:var(--brown)}
-  .hero .tag{display:inline-block;background:#fff;border:2px solid var(--pink-d);color:var(--pink-d);font-weight:900;border-radius:999px;padding:4px 14px;font-size:13px;letter-spacing:.08em}
+  .hero .tag{display:inline-block;background:#fff;border:2px solid var(--pink-d);color:var(--pink-d);font-weight:900;border-radius:999px;padding:4px 14px;font-size:14px;letter-spacing:.08em}
   .hero p.lead{margin:16px 0 26px;font-size:16px}
   .frame{position:relative;justify-self:center;width:min(420px,86vw);aspect-ratio:1;border-radius:50%;background:#fff;padding:14px;box-shadow:0 18px 50px rgba(242,122,160,.28)}
   .frame img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
@@ -132,7 +132,7 @@
 
   /* アイコンの入口 */
   .icons{max-width:760px;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-  .icons a{background:#fff;border-radius:18px;padding:18px 6px 14px;text-align:center;text-decoration:none;border:1px solid var(--line);font-weight:900;font-size:13px;color:var(--pink-d)}
+  .icons a{background:#fff;border-radius:18px;padding:18px 6px 14px;text-align:center;text-decoration:none;border:1px solid var(--line);font-weight:900;font-size:14px;color:var(--pink-d)}
   .icons a:hover{border-color:var(--pink-d)}
   .icons svg{width:44px;height:44px;display:block;margin:0 auto 6px;stroke:var(--pink-d);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   @media (max-width:560px){.icons{grid-template-columns:repeat(2,1fr)}}
@@ -149,7 +149,7 @@
   /* 特集（写真左・文右） */
   .feat{display:grid;gap:18px}
   .feat .item{display:grid;grid-template-columns:44% 1fr;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 26px rgba(217,87,127,.12)}
-  .feat .ph{min-height:200px;position:relative;display:grid;place-items:center;color:var(--muted);background:var(--pink-ll);font-weight:900;font-size:13px}
+  .feat .ph{min-height:200px;position:relative;display:grid;place-items:center;color:var(--muted);background:var(--pink-ll);font-weight:900;font-size:14px}
   /* 絵文字の代わりの線の絵（DESIGN.md 6章） */
   .ln{display:block;fill:none;stroke:var(--pink-d);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .feat .ph .ln{width:72px;height:72px}
@@ -157,7 +157,8 @@
   .feat h3{margin:0 0 6px;color:var(--pink-d);font-size:22px;font-weight:900}
   .feat h3 .en{font-family:"Dancing Script",cursive;font-size:26px;margin-right:6px}
   .feat p{margin:0 0 12px;font-size:14px}
-  .feat .btn{padding:8px 20px;font-size:13px}
+  .more{display:inline-flex;align-items:center;min-height:44px;color:var(--pink-d);font-weight:900;text-decoration:underline;text-underline-offset:4px}
+  .more:hover{color:var(--pink-dd)}
   @media (max-width:640px){.feat .item{grid-template-columns:1fr}.feat .ph{min-height:150px}}
 
   /* はじめての方へ */
@@ -166,7 +167,7 @@
   .step::before{counter-increment:s;content:"STEP " counter(s);position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--pink-d);color:#fff;font-weight:900;font-size:12px;padding:3px 12px;border-radius:999px;letter-spacing:.1em}
   .step .ln{width:40px;height:40px;margin:0 auto}
   .step h3{margin:4px 0 4px;font-size:16px;font-weight:900}
-  .step p{margin:0;font-size:13px;color:var(--muted)}
+  .step p{margin:0;font-size:14px;color:var(--muted)}
   @media (max-width:760px){.steps{grid-template-columns:1fr 1fr;row-gap:26px}}
 
   /* 料金 */
@@ -179,7 +180,7 @@
   .card h4{margin:0 0 2px;font-size:16px;font-weight:900}
   .card .yen{font-size:32px;font-weight:900;color:var(--pink-d)}
   .card .yen small{font-size:14px;color:var(--muted)}
-  .card ul{margin:6px 0 0;padding-left:1.2em;font-size:13px;color:var(--muted)}
+  .card ul{margin:6px 0 0;padding-left:1.2em;font-size:14px;color:var(--muted)}
   .note{background:#fff;border-radius:20px;padding:18px 20px;font-size:14px;border:2px solid var(--pink-l)}
   .calc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-weight:900}
   .calc span{background:var(--pink-ll);border-radius:10px;padding:4px 10px}
@@ -231,7 +232,9 @@
   .recruit .catch .big{font-family:"Dancing Script",cursive;color:var(--pink-d);font-size:44px;line-height:1}
   .recruit .catch p{margin:10px 0 18px;font-weight:900;font-size:17px}
   .recruit .points{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:18px}
-  .recruit .points span{background:#fff;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:900;color:var(--pink-d)}
+  .recruit .points span{background:#fff;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:900;color:var(--pink-d)}
+  .ext{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   footer{background:#fff;text-align:center;padding:30px 16px 36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
   footer .logo{font-size:34px}
   footer .sns{display:flex;justify-content:center;gap:10px;margin:14px 0}
@@ -295,7 +298,7 @@
           <div class="tx">
             <h3><span class="en">Drink</span>もふーにょドリンク</h3>
             <p>もふのーすだけのオリジナルドリンク「もふーにょ」。テキーラやハブ酒の「もふーにょ」も。キャストと一緒に乾杯しましょう。</p>
-            <a class="btn mint" href="#menu">メニューを見る</a>
+            <a class="more" href="#menu">もふーにょのメニューを見る</a>
           </div>
         </div>
         <div class="item">
@@ -303,7 +306,7 @@
           <div class="tx">
             <h3><span class="en">Cheki</span>記念のチェキ</h3>
             <p>「初回もふもふセット」には、キャストとのチェキが1枚ついています。はじめての夜の記念にどうぞ。</p>
-            <a class="btn mint" href="#system">セットを見る</a>
+            <a class="more" href="#system">初回もふもふセットの料金を見る</a>
           </div>
         </div>
         <div class="item">
@@ -311,7 +314,7 @@
           <div class="tx">
             <h3><span class="en">Event</span>テキーラ観覧車</h3>
             <p>お店がいちばん盛り上がる瞬間。ここぞという夜のお祝いに。<span class="badge">紹介文は案</span></p>
-            <a class="btn mint" href="#menu">くわしく見る</a>
+            <a class="more" href="#menu">テキーラ観覧車の料金を見る</a>
           </div>
         </div>
         <div class="item">
@@ -319,7 +322,7 @@
           <div class="tx">
             <h3><span class="en">Champagne</span>シャンパン</h3>
             <p>カフェ・ド・パリのminiから、ベル・エポック、アルマン・ド ゴールドまで。特別な日のお祝いに。</p>
-            <a class="btn mint" href="#menu">くわしく見る</a>
+            <a class="more" href="#menu">シャンパンの料金を見る</a>
           </div>
         </div>
       </div>
@@ -417,7 +420,7 @@
       <div class="head"><span class="en">Cast</span><h2>キャスト</h2></div>
       <div class="cast-x">
         <p>キャストの紹介と、その日の出勤は、Xでお知らせしています。</p>
-        <a class="btn line" href="https://x.com/mofnorth" target="_blank" rel="noopener">Xで出勤を見る</a>
+        <a class="btn line" href="https://x.com/mofnorth" target="_blank" rel="noopener">Xで出勤を見る<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a>
       </div>
     </div>
   </section>
@@ -464,7 +467,7 @@
         <div class="mapcard">
           <div>
             <p style="margin:0 0 12px;font-weight:900">すすきの駅から歩いてすぐ <span class="badge">要確認</span></p>
-            <a class="btn pink" href="https://www.google.com/maps/search/?api=1&query=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%975%E6%9D%A1%E8%A5%BF5%E4%B8%81%E7%9B%AE%20%E7%AC%AC%E4%B8%89%E6%97%AD%E8%A6%B3%E5%85%89%E3%83%93%E3%83%AB" target="_blank" rel="noopener">Googleマップで開く</a>
+            <a class="btn pink" href="https://www.google.com/maps/search/?api=1&query=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%975%E6%9D%A1%E8%A5%BF5%E4%B8%81%E7%9B%AE%20%E7%AC%AC%E4%B8%89%E6%97%AD%E8%A6%B3%E5%85%89%E3%83%93%E3%83%AB" target="_blank" rel="noopener">Googleマップで開く<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a>
           </div>
         </div>
       </div>
@@ -481,7 +484,7 @@
           <p>もふもふ衣装で、<br>いっしょにお店をつくりませんか？</p>
           <div class="points"><span>未経験OK</span><span>週1日〜</span><span>衣装あり</span></div>
           <span class="badge">特ちょうは案</span>
-          <div style="margin-top:16px"><a class="btn pink" href="https://x.com/mofnorth" target="_blank" rel="noopener">XのDMで応募する</a></div>
+          <div style="margin-top:16px"><a class="btn pink" href="https://x.com/mofnorth" target="_blank" rel="noopener">XのDMで応募する<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a></div>
           <p style="font-size:12px;font-weight:700;margin:8px 0 0">応募方法 <span class="badge">要確認</span></p>
         </div>
         <dl class="info">
@@ -500,8 +503,8 @@
 <footer>
   <img src="img/x_icon.jpg" alt="すなっく もふのーす mof north" width="110" height="110" style="display:block;margin:0 auto;border-radius:50%">
   <div class="sns">
-    <a class="btn line" href="https://x.com/mofnorth" target="_blank" rel="noopener">X @mofnorth</a>
-    <a class="btn line" href="https://mofnorth.base.shop" target="_blank" rel="noopener">オンラインショップ</a>
+    <a class="btn line" href="https://x.com/mofnorth" target="_blank" rel="noopener">X @mofnorth<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a>
+    <a class="btn line" href="https://mofnorth.base.shop" target="_blank" rel="noopener">オンラインショップ<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a>
   </div>
   <div>© もふのーす（合同会社Noctua SPR）</div>
   <div style="margin-top:4px">20歳未満の方の飲酒は法律で禁止されています。</div>
