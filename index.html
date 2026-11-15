@@ -90,7 +90,7 @@
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><g fill='%23f9c5d6' opacity='.55'><ellipse cx='30' cy='38' rx='9' ry='8'/><circle cx='19' cy='27' r='3.6'/><circle cx='26' cy='21' r='3.6'/><circle cx='35' cy='21' r='3.6'/><circle cx='42' cy='27' r='3.6'/></g><path fill='%23ffffff' opacity='.9' d='M90 78l3 7 7 3-7 3-3 7-3-7-7-3 7-3z'/><circle cx='70' cy='105' r='2.5' fill='%23b8ecec'/></svg>");
     background-color:var(--pink-ll);}
 
-  .draft{background:var(--note-bg);color:var(--note-tx);font-size:12px;text-align:center;padding:6px 12px;font-weight:700}
+  .draft{background:var(--note-bg);color:var(--note-tx);font-size:12px;text-align:center;padding:8px 16px;font-weight:700}
 
   /* ヘッダー */
   header.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.82);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
@@ -98,7 +98,7 @@
   .logo{font-family:"Dancing Script",cursive;font-size:28px;color:var(--pink-d);text-decoration:none;line-height:1}
   .logo img{display:block;width:44px;height:44px;border-radius:50%}
   .logo small{display:block;font-family:"Zen Maru Gothic";font-size:10px;letter-spacing:.25em;color:var(--muted);margin-top:2px}
-  .nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:700}
+  .nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:700}
   .nav ul a{text-decoration:none}
   .nav ul a:hover{color:var(--pink-d)}
   /* スマホのメニュー：三本線に「メニュー」の文字を添える（DESIGN.md 6章） */
@@ -112,132 +112,139 @@
   }
 
   /* ヒーロー */
-  .hero{min-height:calc(100vh - 90px);display:grid;place-items:center;padding:40px 16px 24px;position:relative;overflow:hidden}
+  .hero{min-height:calc(100vh - 90px);display:grid;place-items:center;padding:48px 16px 24px;position:relative;overflow:hidden}
   .hero .in{max-width:1040px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
   .hero .welcome{font-family:"Dancing Script",cursive;color:var(--pink-d);font-size:clamp(44px,8vw,84px);line-height:1;margin:0}
-  .hero h1{margin:14px 0 6px;font-size:clamp(34px,6.5vw,56px);font-weight:900;letter-spacing:.06em;color:var(--brown)}
-  .hero .tag{display:inline-block;background:#fff;border:2px solid var(--pink-d);color:var(--pink-d);font-weight:900;border-radius:999px;padding:4px 14px;font-size:14px;letter-spacing:.08em}
-  .hero p.lead{margin:16px 0 26px;font-size:16px}
-  .frame{position:relative;justify-self:center;width:min(420px,86vw);aspect-ratio:1;border-radius:50%;background:#fff;padding:14px;box-shadow:0 18px 50px rgba(242,122,160,.28)}
+  .hero h1{margin:16px 0 8px;font-size:clamp(34px,6.5vw,56px);font-weight:900;letter-spacing:.06em;color:var(--brown)}
+  .hero .tag{display:inline-block;background:#fff;border:2px solid var(--pink-d);color:var(--pink-d);font-weight:900;border-radius:999px;padding:4px 16px;font-size:14px;letter-spacing:.08em}
+  .hero p.lead{margin:16px 0 24px;font-size:16px}
+  .frame{position:relative;justify-self:center;width:min(420px,86vw);aspect-ratio:1;border-radius:50%;background:#fff;padding:16px;box-shadow:0 18px 50px rgba(242,122,160,.28)}
   .frame img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
-  .frame .ribbon{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);background:var(--pink-d);color:#fff;font-weight:900;font-size:12px;padding:5px 16px;border-radius:999px;white-space:nowrap}
+  .frame .ribbon{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);background:var(--pink-d);color:#fff;font-weight:900;font-size:12px;padding:4px 16px;border-radius:999px;white-space:nowrap}
   @media (max-width:760px){.hero .in{grid-template-columns:1fr;text-align:center}.hero .frame{order:-1;width:min(300px,78vw)}.btns{justify-content:center}}
-  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btns{display:flex;flex-wrap:wrap;gap:8px}
   /* ボタンは単色・影なし（DESIGN.md 6章）。mint と pink はどちらも主ボタン */
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;padding:12px 26px;border-radius:999px;font-weight:900;text-decoration:none;font-size:15px;border:2px solid var(--pink-d)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:16px 24px;border-radius:999px;font-weight:900;text-decoration:none;font-size:15px;border:2px solid var(--pink-d)}
   .btn.mint,.btn.pink{background:var(--pink-d);color:#fff}
   .btn.mint:hover,.btn.pink:hover{background:var(--pink-dd);border-color:var(--pink-dd)}
   .btn.line{background:#fff;color:var(--pink-d)}
   .btn.line:hover{background:var(--pink-ll)}
 
   /* アイコンの入口 */
-  .icons{max-width:760px;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-  .icons a{background:#fff;border-radius:18px;padding:18px 6px 14px;text-align:center;text-decoration:none;border:1px solid var(--line);font-weight:900;font-size:14px;color:var(--pink-d)}
+  .icons{max-width:760px;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .icons a{background:#fff;border-radius:24px;padding:16px 8px 16px;text-align:center;text-decoration:none;border:1px solid var(--line);font-weight:900;font-size:14px;color:var(--pink-d)}
   .icons a:hover{border-color:var(--pink-d)}
-  .icons svg{width:44px;height:44px;display:block;margin:0 auto 6px;stroke:var(--pink-d);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .icons svg{width:44px;height:44px;display:block;margin:0 auto 8px;stroke:var(--pink-d);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   @media (max-width:560px){.icons{grid-template-columns:repeat(2,1fr)}}
 
   /* 見出し */
   section{padding:64px 16px;scroll-margin-top:58px}
-  .head{text-align:center;margin-bottom:28px}
+  .head{text-align:center;margin-bottom:24px}
   .head .en{font-family:"Dancing Script",cursive;color:var(--pink-d);font-size:clamp(34px,6vw,46px);line-height:1;display:block}
-  .head h2{margin:6px 0 0;font-size:18px;font-weight:900;letter-spacing:.12em}
+  .head h2{margin:8px 0 0;font-size:18px;font-weight:900;letter-spacing:.12em}
   .badge{display:inline-block;font-size:11px;font-weight:900;padding:1px 8px;border-radius:999px;background:var(--note-bg);color:var(--note-tx);vertical-align:middle;margin-left:4px;letter-spacing:0}
   .box{max-width:960px;margin:0 auto}
-  .glass{background:var(--card);backdrop-filter:blur(6px);border-radius:28px;padding:28px;box-shadow:0 10px 30px rgba(217,87,127,.10)}
+  .glass{background:var(--card);backdrop-filter:blur(6px);border-radius:24px;padding:24px;box-shadow:0 10px 30px rgba(217,87,127,.10)}
 
   /* 特集（写真左・文右） */
-  .feat{display:grid;gap:18px}
+  .feat{display:grid;gap:16px}
   .feat .item{display:grid;grid-template-columns:44% 1fr;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 26px rgba(217,87,127,.12)}
   .feat .ph{min-height:200px;position:relative;display:grid;place-items:center;color:var(--muted);background:var(--pink-ll);font-weight:900;font-size:14px}
   /* 絵文字の代わりの線の絵（DESIGN.md 6章） */
   .ln{display:block;fill:none;stroke:var(--pink-d);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .feat .ph .ln{width:72px;height:72px}
-  .feat .tx{padding:22px 24px;background:#fff}
-  .feat h3{margin:0 0 6px;color:var(--pink-d);font-size:22px;font-weight:900}
-  .feat h3 .en{font-family:"Dancing Script",cursive;font-size:26px;margin-right:6px}
-  .feat p{margin:0 0 12px;font-size:14px}
+  .feat .tx{padding:24px 24px;background:#fff}
+  .feat h3{margin:0 0 8px;color:var(--pink-d);font-size:22px;font-weight:900}
+  .feat h3 .en{font-family:"Dancing Script",cursive;font-size:26px;margin-right:8px}
+  .feat p{margin:0 0 16px;font-size:14px}
   .more{display:inline-flex;align-items:center;min-height:44px;color:var(--pink-d);font-weight:900;text-decoration:underline;text-underline-offset:4px}
   .more:hover{color:var(--pink-dd)}
   @media (max-width:640px){.feat .item{grid-template-columns:1fr}.feat .ph{min-height:150px}}
 
   /* はじめての方へ */
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
-  .step{background:#fff;border-radius:22px;padding:26px 16px 18px;text-align:center;position:relative;border:2px dashed var(--line)}
-  .step::before{counter-increment:s;content:"STEP " counter(s);position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--pink-d);color:#fff;font-weight:900;font-size:12px;padding:3px 12px;border-radius:999px;letter-spacing:.1em}
+  .step{background:#fff;border-radius:24px;padding:24px 16px 16px;text-align:center;position:relative;border:2px dashed var(--line)}
+  .step::before{counter-increment:s;content:"STEP " counter(s);position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--pink-d);color:#fff;font-weight:900;font-size:12px;padding:3px 16px;border-radius:999px;letter-spacing:.1em}
   .step .ln{width:40px;height:40px;margin:0 auto}
   .step h3{margin:4px 0 4px;font-size:16px;font-weight:900}
   .step p{margin:0;font-size:14px;color:var(--muted)}
-  @media (max-width:760px){.steps{grid-template-columns:1fr 1fr;row-gap:26px}}
+  @media (max-width:760px){.steps{grid-template-columns:1fr 1fr;row-gap:24px}}
 
   /* 料金 */
-  .plan-label{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-weight:900;color:var(--pink-d)}
+  .plan-label{display:flex;align-items:center;gap:8px;margin:0 0 16px;font-weight:900;color:var(--pink-d)}
   .plan-label::after{content:"";flex:1;border-top:2px dashed var(--line)}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:26px}
-  .card{background:#fff;border-radius:22px;padding:20px;position:relative;box-shadow:0 6px 18px rgba(217,87,127,.10)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:24px}
+  .card{background:#fff;border-radius:24px;padding:16px;position:relative;box-shadow:0 6px 18px rgba(217,87,127,.10)}
   .card.reco{outline:3px solid var(--pink-d)}
-  .card.reco::before{content:"はじめての方に おすすめ";position:absolute;top:-13px;left:18px;background:var(--pink-d);color:#fff;font-size:12px;font-weight:900;padding:3px 12px;border-radius:999px}
-  .card h4{margin:0 0 2px;font-size:16px;font-weight:900}
+  .card.reco::before{content:"はじめての方に おすすめ";position:absolute;top:-13px;left:18px;background:var(--pink-d);color:#fff;font-size:12px;font-weight:900;padding:3px 16px;border-radius:999px}
+  .card h3{margin:0 0 2px;font-size:16px;font-weight:900}
   .card .yen{font-size:32px;font-weight:900;color:var(--pink-d)}
   .card .yen small{font-size:14px;color:var(--muted)}
-  .card ul{margin:6px 0 0;padding-left:1.2em;font-size:14px;color:var(--muted)}
-  .note{background:#fff;border-radius:20px;padding:18px 20px;font-size:14px;border:2px solid var(--pink-l)}
-  .calc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-weight:900}
-  .calc span{background:var(--pink-ll);border-radius:10px;padding:4px 10px}
+  .card ul{margin:8px 0 0;padding-left:1.2em;font-size:14px;color:var(--muted)}
+  .note{background:#fff;border-radius:24px;padding:16px 16px;font-size:14px;border:2px solid var(--pink-l)}
+  .calc{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px;font-weight:900}
+  .calc span{background:var(--pink-ll);border-radius:8px;padding:4px 8px}
   .calc .eq{background:none;color:var(--pink-d)}
 
   /* メニュー */
   .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-  .mbox{background:#fff;border-radius:22px;padding:20px}
+  .mbox{background:#fff;border-radius:24px;padding:16px}
   .mbox h3{margin:0 0 8px;font-size:16px;font-weight:900;color:var(--pink-d)}
-  .row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:14px}
+  .row{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px}
   .row:last-child{border-bottom:none}
   .row b{white-space:nowrap;color:var(--brown)}
 
   /* キャスト（写真が届いたら .casts に並べる。それまでは枠ごと出さない） */
-  .casts{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .casts{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
   .cast{text-align:center}
-  .cast .ph{aspect-ratio:3/4;border-radius:22px;background:var(--pink-ll);display:grid;place-items:center;color:var(--muted);font-weight:900;font-size:12px;box-shadow:0 6px 16px rgba(217,87,127,.12);border:4px solid #fff}
+  .cast .ph{aspect-ratio:3/4;border-radius:24px;background:var(--pink-ll);display:grid;place-items:center;color:var(--muted);font-weight:900;font-size:12px;box-shadow:0 6px 16px rgba(217,87,127,.12);border:4px solid #fff}
   .cast p{margin:8px 0 0;font-weight:900}
   .cast-x{max-width:560px;margin:0 auto;background:#fff;border-radius:24px;padding:24px;text-align:center}
   .cast-x p{margin:0 0 16px}
   @media (max-width:760px){.casts{grid-template-columns:repeat(2,1fr)}}
 
   /* お約束・FAQ */
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media (max-width:760px){.two{grid-template-columns:1fr}}
-  .panel{background:#fff;border-radius:22px;padding:22px}
-  .panel h3{margin:0 0 10px;font-weight:900;color:var(--pink-d)}
+  .panel{background:#fff;border-radius:24px;padding:24px}
+  .panel h3{margin:0 0 8px;font-weight:900;color:var(--pink-d)}
   ol.rules{margin:0;padding:0;list-style:none;counter-reset:r}
-  ol.rules li{counter-increment:r;display:flex;gap:10px;margin:8px 0;font-size:14px}
+  ol.rules li{counter-increment:r;display:flex;gap:8px;margin:8px 0;font-size:14px}
   ol.rules li::before{content:counter(r);flex:none;width:24px;height:24px;border-radius:50%;background:var(--pink-l);color:var(--pink-d);font-weight:900;display:grid;place-items:center;font-size:12px}
-  details{border-bottom:1px dashed var(--line);padding:10px 0}
+  details{border-bottom:1px dashed var(--line);padding:8px 0}
   details:last-child{border-bottom:none}
   summary{cursor:pointer;font-weight:900;list-style:none;font-size:14px}
   summary::before{content:"Q";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--pink-d);color:#fff;font-size:12px;margin-right:8px}
-  details p{margin:8px 0 0 30px;color:var(--muted);font-size:14px}
+  details p{margin:8px 0 0 32px;color:var(--muted);font-size:14px}
 
   /* アクセス */
-  .access{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+  .access{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
   @media (max-width:760px){.access{grid-template-columns:1fr}}
-  dl.info{margin:0;background:#fff;border-radius:22px;padding:22px;display:grid;grid-template-columns:6.5em 1fr;gap:10px 12px;font-size:14px}
+  dl.info{margin:0;background:#fff;border-radius:24px;padding:24px;display:grid;grid-template-columns:6.5em 1fr;gap:8px 16px;font-size:14px}
   dl.info dt{font-weight:900;color:var(--pink-d)}
   dl.info dd{margin:0}
-  .mapcard{background:var(--pink-ll);border:2px solid var(--pink-l);border-radius:22px;display:grid;place-items:center;text-align:center;padding:24px;min-height:220px}
+  .mapcard{background:var(--pink-ll);border:2px solid var(--pink-l);border-radius:24px;display:grid;place-items:center;text-align:center;padding:24px;min-height:220px}
 
   /* 求人 */
-  .recruit{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:start}
+  .recruit{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px;align-items:start}
   @media (max-width:760px){.recruit{grid-template-columns:1fr}}
-  .recruit .catch{background:var(--pink-ll);border:2px solid var(--pink-l);border-radius:22px;padding:26px;text-align:center}
+  .recruit .catch{background:var(--pink-ll);border:2px solid var(--pink-l);border-radius:24px;padding:24px;text-align:center}
   .recruit .catch .big{font-family:"Dancing Script",cursive;color:var(--pink-d);font-size:44px;line-height:1}
-  .recruit .catch p{margin:10px 0 18px;font-weight:900;font-size:17px}
-  .recruit .points{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:18px}
-  .recruit .points span{background:#fff;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:900;color:var(--pink-d)}
+  .recruit .catch p{margin:8px 0 16px;font-weight:900;font-size:17px}
+  .recruit .points{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:16px}
+  .recruit .points span{background:#fff;border-radius:999px;padding:4px 16px;font-size:14px;font-weight:900;color:var(--pink-d)}
   .ext{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-  footer{background:#fff;text-align:center;padding:30px 16px 36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+  /* もとはHTMLに直書きしていたもの */
+  .frame img.contain{object-fit:contain;background:#fff}
+  .mapcard .map-lead{margin:0 0 16px;font-weight:900}
+  .recruit .apply{margin-top:16px}
+  .recruit .catch .apply-note{font-size:12px;font-weight:700;margin:8px 0 0}
+  footer .foot-logo{display:block;margin:0 auto;border-radius:50%}
+  footer .foot-note{margin-top:8px}
+  footer{background:#fff;text-align:center;padding:32px 16px 32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
   footer .logo{font-size:34px}
-  footer .sns{display:flex;justify-content:center;gap:10px;margin:14px 0}
+  footer .sns{display:flex;justify-content:center;gap:8px;margin:16px 0}
 </style>
 </head>
 <body>
@@ -275,7 +282,7 @@
         </div>
       </div>
       <div class="frame">
-        <img src="img/x_icon.jpg" alt="すなっく もふのーす mof north のロゴ" style="object-fit:contain;background:#fff">
+        <img class="contain" src="img/x_icon.jpg" alt="すなっく もふのーす mof north のロゴ">
       </div>
     </div>
   </section>
@@ -350,12 +357,12 @@
       <p class="plan-label">はじめての方</p>
       <div class="cards">
         <div class="card reco">
-          <h4>初回もふもふセット</h4>
+          <h3>初回もふもふセット</h3>
           <div class="yen">5,000<small>円</small></div>
           <ul><li>チャージ・ボトル・割りもの1杯</li><li>乾杯ドリンク・チェキ1枚つき</li><li>時間の制限なし</li></ul>
         </div>
         <div class="card">
-          <h4>初回 飲み放題（1時間）</h4>
+          <h3>初回 飲み放題（1時間）</h3>
           <div class="yen">1,500<small>円〜</small></div>
           <ul><li>22時までのご入店 1,500円</li><li>22時からのご入店 2,000円</li><li>延長 30分 1,500円</li></ul>
         </div>
@@ -364,17 +371,17 @@
       <p class="plan-label">2回目からの方</p>
       <div class="cards">
         <div class="card">
-          <h4>チャージ</h4>
+          <h3>チャージ</h3>
           <div class="yen">2,000<small>円</small></div>
           <ul><li>時間の制限なし</li><li>1時間ごとにAmusement（もふーにょドリンクなど）を1杯以上お願いしています</li></ul>
         </div>
         <div class="card">
-          <h4>通常 飲み放題（1時間）</h4>
+          <h3>通常 飲み放題（1時間）</h3>
           <div class="yen">3,000<small>円〜</small></div>
           <ul><li>22時までのご入店 3,000円</li><li>22時からのご入店 3,500円</li><li>延長 30分 1,500円</li></ul>
         </div>
         <div class="card">
-          <h4>飲み放題 UpGrade</h4>
+          <h3>飲み放題 UpGrade</h3>
           <div class="yen">+1,000<small>円</small></div>
           <ul><li>1時間 +1,000円</li><li>延長30分 +500円</li></ul>
         </div>
@@ -466,7 +473,7 @@
         </dl>
         <div class="mapcard">
           <div>
-            <p style="margin:0 0 12px;font-weight:900">すすきの駅から歩いてすぐ <span class="badge">要確認</span></p>
+            <p class="map-lead">すすきの駅から歩いてすぐ <span class="badge">要確認</span></p>
             <a class="btn pink" href="https://www.google.com/maps/search/?api=1&query=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%975%E6%9D%A1%E8%A5%BF5%E4%B8%81%E7%9B%AE%20%E7%AC%AC%E4%B8%89%E6%97%AD%E8%A6%B3%E5%85%89%E3%83%93%E3%83%AB" target="_blank" rel="noopener">Googleマップで開く<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a>
           </div>
         </div>
@@ -484,8 +491,8 @@
           <p>もふもふ衣装で、<br>いっしょにお店をつくりませんか？</p>
           <div class="points"><span>未経験OK</span><span>週1日〜</span><span>衣装あり</span></div>
           <span class="badge">特ちょうは案</span>
-          <div style="margin-top:16px"><a class="btn pink" href="https://x.com/mofnorth" target="_blank" rel="noopener">XのDMで応募する<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a></div>
-          <p style="font-size:12px;font-weight:700;margin:8px 0 0">応募方法 <span class="badge">要確認</span></p>
+          <div class="apply"><a class="btn pink" href="https://x.com/mofnorth" target="_blank" rel="noopener">XのDMで応募する<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a></div>
+          <p class="apply-note">応募方法 <span class="badge">要確認</span></p>
         </div>
         <dl class="info">
           <dt>お仕事</dt><dd>お客様とのおしゃべり、ドリンクづくり・提供</dd>
@@ -501,13 +508,13 @@
 </main>
 
 <footer>
-  <img src="img/x_icon.jpg" alt="すなっく もふのーす mof north" width="110" height="110" style="display:block;margin:0 auto;border-radius:50%">
+  <img src="img/x_icon.jpg" alt="すなっく もふのーす mof north" width="110" height="110" class="foot-logo">
   <div class="sns">
     <a class="btn line" href="https://x.com/mofnorth" target="_blank" rel="noopener">X @mofnorth<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a>
     <a class="btn line" href="https://mofnorth.base.shop" target="_blank" rel="noopener">オンラインショップ<svg class="ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span class="sr">（別のタブで開きます）</span></a>
   </div>
   <div>© もふのーす（合同会社Noctua SPR）</div>
-  <div style="margin-top:4px">20歳未満の方の飲酒は法律で禁止されています。</div>
+  <div class="foot-note">20歳未満の方の飲酒は法律で禁止されています。</div>
 </footer>
 <script>
   // スマホのメニューの開け閉め
