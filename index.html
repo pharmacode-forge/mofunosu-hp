@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>もふのーす｜すすきの 北海道アニマルコンセプトスナック</title>
+<meta name="description" content="札幌すすきのの北海道アニマルコンセプトスナック「もふのーす（mof north）」。もふもふ衣装のキャストがお出迎え。初回セット5,000円、飲み放題1時間1,500円から。営業時間20:00〜翌1:00。南5条西5丁目 第三旭観光ビル6F。">
+<!-- 試作のあいだは検索に出さない。公開する時にこの1行を消す -->
+<meta name="robots" content="noindex">
+<!-- 公開する時：URLが決まったら canonical と og:url を足し、og:image を https から始まる絶対URLにする -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="もふのーす">
+<meta property="og:title" content="もふのーす｜すすきの 北海道アニマルコンセプトスナック">
+<meta property="og:description" content="もふもふ衣装のキャストがお出迎え。すすきのの北海道アニマルコンセプトスナック。初回セット5,000円、飲み放題1時間1,500円から。">
+<meta property="og:image" content="img/x_icon.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@mofnorth">
+<link rel="icon" href="img/x_icon.jpg">
+<link rel="apple-touch-icon" href="img/x_icon.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "もふのーす",
+  "alternateName": ["mof north", "すなっく もふのーす"],
+  "description": "札幌すすきのの北海道アニマルコンセプトスナック。もふもふ衣装のキャストがお出迎えします。",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "南5条西5丁目 第三旭観光ビル6F",
+    "addressLocality": "札幌市中央区",
+    "addressRegion": "北海道",
+    "addressCountry": "JP"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "20:00",
+    "closes": "01:00"
+  }],
+  "priceRange": "¥1,500〜",
+  "paymentAccepted": "現金, クレジットカード, PayPay",
+  "servesCuisine": "ドリンク",
+  "image": "img/x_icon.jpg",
+  "logo": "img/x_icon.jpg",
+  "sameAs": ["https://x.com/mofnorth", "https://mofnorth.base.shop"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "ひとりでも入れますか？", "acceptedAnswer": {"@type": "Answer", "text": "もちろんです。おひとりさまも大歓迎です。"}},
+    {"@type": "Question", "name": "予約は必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "ご予約なしでも大丈夫です。"}},
+    {"@type": "Question", "name": "カードは使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "クレジットカードとPayPayが使えます。"}},
+    {"@type": "Question", "name": "時間の制限はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "チャージとセットは時間の制限はありません。飲み放題は1時間ごとで、30分ごとの延長になります。"}}
+  ]
+}
+</script>
+<!--
+  キャスト募集（JobPosting）の構造化データ：時給・勤務条件・応募方法が決まったら、下のひな型を埋めて script type="application/ld+json" に入れる。
+  未確定のまま入れると、Googleの求人検索で誤った情報が出るので入れていない。
+  {"@context":"https://schema.org","@type":"JobPosting","title":"キャスト（アルバイト）","datePosted":"YYYY-MM-DD",
+   "employmentType":"PART_TIME","hiringOrganization":{"@type":"Organization","name":"合同会社Noctua SPR（もふのーす）","sameAs":"https://x.com/mofnorth"},
+   "jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"南5条西5丁目 第三旭観光ビル6F","addressLocality":"札幌市中央区","addressRegion":"北海道","addressCountry":"JP"}},
+   "baseSalary":{"@type":"MonetaryAmount","currency":"JPY","value":{"@type":"QuantitativeValue","value":0,"unitText":"HOUR"}},
+   "description":"（仕事内容・条件）"}
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#f27aa0; --pink-d:#d9577f; --pink-l:#ffe3ec; --pink-ll:#fff4f7;
+    --mint:#2fc0c0; --mint-d:#1ea5a6; --brown:#6e4a52; --muted:#9a7f86;
+    --card:rgba(255,255,255,.86); --line:#f7cfdc;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Zen Maru Gothic",system-ui,sans-serif;color:var(--brown);line-height:1.8;background:var(--pink-ll);-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+
+  /* 後ろに残る背景（あしあと・星の模様） */
+  .bg{position:fixed;inset:0;z-index:-1;
+    background:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><g fill='%23f9c5d6' opacity='.55'><ellipse cx='30' cy='38' rx='9' ry='8'/><circle cx='19' cy='27' r='3.6'/><circle cx='26' cy='21' r='3.6'/><circle cx='35' cy='21' r='3.6'/><circle cx='42' cy='27' r='3.6'/></g><path fill='%23ffffff' opacity='.9' d='M90 78l3 7 7 3-7 3-3 7-3-7-7-3 7-3z'/><circle cx='70' cy='105' r='2.5' fill='%23b8ecec'/></svg>"),
+      linear-gradient(180deg,#ffe9f0 0%,#fff6ef 55%,#e9f8f7 100%);}
+
+  .draft{background:#fff3b0;color:#6a5200;font-size:12px;text-align:center;padding:6px 12px;font-weight:700}
+
+  /* ヘッダー */
+  header.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.82);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header.nav .in{max-width:1040px;margin:0 auto;padding:0 16px;height:58px;display:flex;align-items:center;justify-content:space-between}
+  .logo{font-family:"Dancing Script",cursive;font-size:28px;color:var(--pink);text-decoration:none;line-height:1}
+  .logo small{display:block;font-family:"Zen Maru Gothic";font-size:10px;letter-spacing:.25em;color:var(--muted);margin-top:2px}
+  .nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:700}
+  .nav ul a{text-decoration:none}
+  .nav ul a:hover{color:var(--pink)}
+  @media (max-width:700px){.nav ul{display:none}}
+
+  /* ヒーロー */
+  .hero{min-height:calc(100vh - 90px);display:grid;place-items:center;padding:40px 16px 24px;position:relative;overflow:hidden}
+  .hero .in{max-width:1040px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+  .hero .welcome{font-family:"Dancing Script",cursive;color:var(--pink);font-size:clamp(44px,8vw,84px);line-height:1;margin:0;text-shadow:0 3px 0 #fff}
+  .hero h1{margin:14px 0 6px;font-size:clamp(34px,6.5vw,56px);font-weight:900;letter-spacing:.06em;color:var(--brown)}
+  .hero .tag{display:inline-block;background:#fff;border:2px solid var(--pink);color:var(--pink);font-weight:900;border-radius:999px;padding:4px 14px;font-size:13px;letter-spacing:.08em}
+  .hero p.lead{margin:16px 0 26px;font-size:16px}
+  .frame{position:relative;justify-self:center;width:min(420px,86vw);aspect-ratio:1;border-radius:50%;background:#fff;padding:14px;box-shadow:0 18px 50px rgba(242,122,160,.28)}
+  .frame img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+  .frame .ribbon{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);background:var(--pink);color:#fff;font-weight:900;font-size:12px;padding:5px 16px;border-radius:999px;white-space:nowrap}
+  .float{position:absolute;font-size:22px;animation:fl 4s ease-in-out infinite}
+  @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @media (prefers-reduced-motion:reduce){.float{animation:none}}
+  @media (max-width:760px){.hero .in{grid-template-columns:1fr;text-align:center}.hero .frame{order:-1;width:min(300px,78vw)}.btns{justify-content:center}}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 26px;border-radius:999px;font-weight:900;text-decoration:none;font-size:15px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.mint{background:linear-gradient(90deg,var(--mint),#56d6d0);color:#fff;box-shadow:0 6px 16px rgba(47,192,192,.35)}
+  .btn.pink{background:var(--pink);color:#fff;box-shadow:0 6px 16px rgba(242,122,160,.35)}
+  .btn.line{background:#fff;color:var(--pink);border:2px solid var(--pink)}
+
+  /* アイコンの入口 */
+  .icons{max-width:760px;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .icons a{background:#fff;border-radius:18px;padding:18px 6px 14px;text-align:center;text-decoration:none;box-shadow:0 8px 22px rgba(217,87,127,.14);font-weight:900;font-size:13px;color:var(--pink-d);transition:transform .15s}
+  .icons a:hover{transform:translateY(-3px)}
+  .icons svg{width:44px;height:44px;display:block;margin:0 auto 6px;stroke:var(--pink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  @media (max-width:560px){.icons{grid-template-columns:repeat(2,1fr)}}
+
+  /* 見出し */
+  section{padding:64px 16px;scroll-margin-top:58px}
+  .head{text-align:center;margin-bottom:28px}
+  .head .en{font-family:"Dancing Script",cursive;color:var(--pink);font-size:clamp(34px,6vw,46px);line-height:1;display:block}
+  .head h2{margin:6px 0 0;font-size:18px;font-weight:900;letter-spacing:.12em}
+  .badge{display:inline-block;font-size:11px;font-weight:900;padding:1px 8px;border-radius:999px;background:#fff3b0;color:#6a5200;vertical-align:middle;margin-left:4px;letter-spacing:0}
+  .box{max-width:960px;margin:0 auto}
+  .glass{background:var(--card);backdrop-filter:blur(6px);border-radius:28px;padding:28px;box-shadow:0 10px 30px rgba(217,87,127,.10)}
+
+  /* 特集（写真左・文右） */
+  .feat{display:grid;gap:18px}
+  .feat .item{display:grid;grid-template-columns:44% 1fr;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 26px rgba(217,87,127,.12)}
+  .feat .ph{min-height:200px;position:relative;display:grid;place-items:center;color:#fff;font-weight:900;font-size:13px}
+  .feat .ph.a{background:linear-gradient(135deg,#ffb3c8,#ffd8a8)}
+  .feat .ph.b{background:linear-gradient(135deg,#b9ecea,#cfe0ff)}
+  .feat .ph.c{background:linear-gradient(135deg,#ffd0e1,#d9c8ff)}
+  .feat .ph.d{background:linear-gradient(135deg,#ffe0a8,#ffb3c8)}
+  .feat .ph .big{font-size:56px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.08))}
+  .feat .ph .cap{position:absolute;bottom:10px;right:12px;background:rgba(255,255,255,.85);color:var(--muted);border-radius:999px;padding:2px 10px;font-size:11px}
+  .feat .tx{padding:22px 24px;background:linear-gradient(90deg,#fff 0%,#fff6f9 100%)}
+  .feat h3{margin:0 0 6px;color:var(--pink);font-size:22px;font-weight:900}
+  .feat h3 .en{font-family:"Dancing Script",cursive;font-size:26px;margin-right:6px}
+  .feat p{margin:0 0 12px;font-size:14px}
+  .feat .btn{padding:8px 20px;font-size:13px}
+  @media (max-width:640px){.feat .item{grid-template-columns:1fr}.feat .ph{min-height:150px}}
+
+  /* はじめての方へ */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+  .step{background:#fff;border-radius:22px;padding:26px 16px 18px;text-align:center;position:relative;border:2px dashed var(--line)}
+  .step::before{counter-increment:s;content:"STEP " counter(s);position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--pink);color:#fff;font-weight:900;font-size:12px;padding:3px 12px;border-radius:999px;letter-spacing:.1em}
+  .step .ic{font-size:34px}
+  .step h3{margin:4px 0 4px;font-size:16px;font-weight:900}
+  .step p{margin:0;font-size:13px;color:var(--muted)}
+  @media (max-width:760px){.steps{grid-template-columns:1fr 1fr;row-gap:26px}}
+
+  /* 料金 */
+  .plan-label{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-weight:900;color:var(--pink-d)}
+  .plan-label::after{content:"";flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:26px}
+  .card{background:#fff;border-radius:22px;padding:20px;position:relative;box-shadow:0 6px 18px rgba(217,87,127,.10)}
+  .card.reco{outline:3px solid var(--pink)}
+  .card.reco::before{content:"はじめての方に おすすめ";position:absolute;top:-13px;left:18px;background:var(--mint);color:#fff;font-size:12px;font-weight:900;padding:3px 12px;border-radius:999px}
+  .card h4{margin:0 0 2px;font-size:16px;font-weight:900}
+  .card .yen{font-size:32px;font-weight:900;color:var(--pink)}
+  .card .yen small{font-size:14px;color:var(--muted)}
+  .card ul{margin:6px 0 0;padding-left:1.2em;font-size:13px;color:var(--muted)}
+  .note{background:#fff;border-radius:20px;padding:18px 20px;font-size:14px;border:2px solid var(--pink-l)}
+  .calc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-weight:900}
+  .calc span{background:var(--pink-ll);border-radius:10px;padding:4px 10px}
+  .calc .eq{background:none;color:var(--pink)}
+
+  /* メニュー */
+  .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .mbox{background:#fff;border-radius:22px;padding:20px}
+  .mbox h3{margin:0 0 8px;font-size:16px;font-weight:900;color:var(--pink-d)}
+  .row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:14px}
+  .row:last-child{border-bottom:none}
+  .row b{white-space:nowrap;color:var(--brown)}
+
+  /* キャスト */
+  .casts{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .cast{text-align:center}
+  .cast .ph{aspect-ratio:3/4;border-radius:22px;background:linear-gradient(160deg,#ffd0e1,#c9f0ee);display:grid;place-items:center;color:#fff;font-weight:900;font-size:12px;box-shadow:0 6px 16px rgba(217,87,127,.12);border:4px solid #fff}
+  .cast p{margin:8px 0 0;font-weight:900}
+  @media (max-width:760px){.casts{grid-template-columns:repeat(2,1fr)}}
+
+  /* お約束・FAQ */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:760px){.two{grid-template-columns:1fr}}
+  .panel{background:#fff;border-radius:22px;padding:22px}
+  .panel h3{margin:0 0 10px;font-weight:900;color:var(--pink-d)}
+  ol.rules{margin:0;padding:0;list-style:none;counter-reset:r}
+  ol.rules li{counter-increment:r;display:flex;gap:10px;margin:8px 0;font-size:14px}
+  ol.rules li::before{content:counter(r);flex:none;width:24px;height:24px;border-radius:50%;background:var(--pink-l);color:var(--pink-d);font-weight:900;display:grid;place-items:center;font-size:12px}
+  details{border-bottom:1px dashed var(--line);padding:10px 0}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;font-weight:900;list-style:none;font-size:14px}
+  summary::before{content:"Q";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--pink);color:#fff;font-size:12px;margin-right:8px}
+  details p{margin:8px 0 0 30px;color:var(--muted);font-size:14px}
+
+  /* アクセス */
+  .access{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+  @media (max-width:760px){.access{grid-template-columns:1fr}}
+  dl.info{margin:0;background:#fff;border-radius:22px;padding:22px;display:grid;grid-template-columns:6.5em 1fr;gap:10px 12px;font-size:14px}
+  dl.info dt{font-weight:900;color:var(--pink-d)}
+  dl.info dd{margin:0}
+  .mapcard{background:linear-gradient(135deg,#ffd0e1,#c9f0ee);border-radius:22px;display:grid;place-items:center;text-align:center;padding:24px;min-height:220px}
+
+  /* 求人 */
+  .recruit{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:start}
+  @media (max-width:760px){.recruit{grid-template-columns:1fr}}
+  .recruit .catch{background:linear-gradient(135deg,#ffd0e1,#ffe9c7);border-radius:22px;padding:26px;text-align:center}
+  .recruit .catch .big{font-family:"Dancing Script",cursive;color:var(--pink);font-size:44px;line-height:1}
+  .recruit .catch p{margin:10px 0 18px;font-weight:900;font-size:17px}
+  .recruit .points{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:18px}
+  .recruit .points span{background:#fff;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:900;color:var(--pink-d)}
+  footer{background:#fff;text-align:center;padding:30px 16px 36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+  footer .logo{font-size:34px}
+  footer .sns{display:flex;justify-content:center;gap:10px;margin:14px 0}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+
+<div class="draft">試作版（公開前）：黄色の印「準備中」「案」「要確認」は、まだお店に確かめていない仮置きです。</div>
+
+<header class="nav">
+  <div class="in">
+    <a class="logo" href="#top">Mofunosu<small>もふのーす</small></a>
+    <ul>
+      <li><a href="#first">はじめての方へ</a></li>
+      <li><a href="#system">料金</a></li>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#cast">キャスト</a></li>
+      <li><a href="#access">アクセス</a></li>
+      <li><a href="#recruit">求人</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ヒーロー -->
+  <section class="hero" aria-label="もふのーすについて">
+    <span class="float" style="left:6%;top:14%">✨</span>
+    <span class="float" style="right:8%;top:10%;animation-delay:1s">🐾</span>
+    <span class="float" style="left:12%;bottom:12%;animation-delay:2s">⭐</span>
+    <div class="in">
+      <div>
+        <p class="welcome">Welcome!</p>
+        <span class="tag">北海道アニマルコンセプトスナック</span>
+        <h1>もふのーす</h1>
+        <p class="lead">すすきので、もふもふのどうぶつたちがお出迎え。<br>はじめての方も、おひとりさまも大歓迎です。</p>
+        <div class="btns">
+          <a class="btn mint" href="#first">はじめての方へ</a>
+          <a class="btn line" href="#system">料金を見る</a>
+        </div>
+      </div>
+      <div class="frame">
+        <img src="img/x_icon.jpg" alt="すなっく もふのーす mof north のロゴ" style="object-fit:contain;background:#fff">
+      </div>
+    </div>
+  </section>
+
+  <!-- アイコンの入口 -->
+  <nav class="icons" aria-label="よく見られる項目">
+    <a href="#first"><svg viewBox="0 0 48 48"><path d="M24 6c-8 0-14 6-14 14 0 10 14 22 14 22s14-12 14-22c0-8-6-14-14-14z"/><path d="M18 20l4 4 8-8"/></svg>はじめての方へ</a>
+    <a href="#system"><svg viewBox="0 0 48 48"><path d="M14 8l10 14 10-14"/><path d="M24 22v20"/><path d="M15 26h18M15 33h18"/></svg>ご利用料金</a>
+    <a href="#cast"><svg viewBox="0 0 48 48"><circle cx="24" cy="18" r="8"/><path d="M9 42c2-9 8-13 15-13s13 4 15 13"/><path d="M16 11l-3-5M32 11l3-5"/></svg>キャスト</a>
+    <a href="#access"><svg viewBox="0 0 48 48"><path d="M24 44s14-13 14-24a14 14 0 0 0-28 0c0 11 14 24 14 24z"/><circle cx="24" cy="20" r="5"/></svg>アクセス</a>
+  </nav>
+
+  <!-- 特集 -->
+  <section id="features">
+    <div class="box">
+      <div class="head"><span class="en">Features</span><h2>もふのーすの楽しみ方</h2></div>
+      <div class="feat">
+        <div class="item">
+          <div class="ph a"><span class="big">🍹</span><span class="cap">写真 準備中</span></div>
+          <div class="tx">
+            <h3><span class="en">Drink</span>もふーにょドリンク</h3>
+            <p>もふのーすだけのオリジナルドリンク「もふーにょ」。テキーラやハブ酒の「もふーにょ」も。キャストと一緒に乾杯しましょう。</p>
+            <a class="btn mint" href="#menu">メニューを見る</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ph b"><span class="big">📸</span><span class="cap">写真 準備中</span></div>
+          <div class="tx">
+            <h3><span class="en">Cheki</span>記念のチェキ</h3>
+            <p>「初回もふもふセット」には、キャストとのチェキが1枚ついています。はじめての夜の記念にどうぞ。</p>
+            <a class="btn mint" href="#system">セットを見る</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ph c"><span class="big">🎡</span><span class="cap">写真 準備中</span></div>
+          <div class="tx">
+            <h3><span class="en">Event</span>テキーラ観覧車</h3>
+            <p>お店がいちばん盛り上がる瞬間。ここぞという夜のお祝いに。<span class="badge">紹介文は案</span></p>
+            <a class="btn mint" href="#menu">くわしく見る</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="ph d"><span class="big">🥂</span><span class="cap">写真 準備中</span></div>
+          <div class="tx">
+            <h3><span class="en">Champagne</span>シャンパン</h3>
+            <p>カフェ・ド・パリのminiから、ベル・エポック、アルマン・ド ゴールドまで。特別な日のお祝いに。</p>
+            <a class="btn mint" href="#menu">くわしく見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- はじめての方へ -->
+  <section id="first">
+    <div class="box glass">
+      <div class="head"><span class="en">First Visit</span><h2>はじめての方へ</h2></div>
+      <div class="steps">
+        <div class="step"><div class="ic">🏢</div><h3>ビルの6階へ</h3><p>第三旭観光ビルの6階です。</p></div>
+        <div class="step"><div class="ic">📋</div><h3>プランを選ぶ</h3><p>はじめての方は「初回もふもふセット」か「初回 飲み放題」がおすすめ。</p></div>
+        <div class="step"><div class="ic">🥂</div><h3>おしゃべり＆乾杯</h3><p>キャストとゆっくりおしゃべりを楽しんでください。</p></div>
+        <div class="step"><div class="ic">💳</div><h3>お会計</h3><p>現金・クレジットカード・PayPayが使えます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金 -->
+  <section id="system">
+    <div class="box">
+      <div class="head"><span class="en">System</span><h2>ご利用料金（お一人さま）</h2></div>
+
+      <p class="plan-label">はじめての方</p>
+      <div class="cards">
+        <div class="card reco">
+          <h4>初回もふもふセット</h4>
+          <div class="yen">5,000<small>円</small></div>
+          <ul><li>チャージ・ボトル・割りもの1杯</li><li>乾杯ドリンク・チェキ1枚つき</li><li>時間の制限なし</li></ul>
+        </div>
+        <div class="card">
+          <h4>初回 飲み放題（1時間）</h4>
+          <div class="yen">1,500<small>円〜</small></div>
+          <ul><li>22時までのご入店 1,500円</li><li>22時からのご入店 2,000円</li><li>延長 30分 1,500円</li></ul>
+        </div>
+      </div>
+
+      <p class="plan-label">2回目からの方</p>
+      <div class="cards">
+        <div class="card">
+          <h4>チャージ</h4>
+          <div class="yen">2,000<small>円</small></div>
+          <ul><li>時間の制限なし</li><li>1時間ごとにAmusement（もふーにょドリンクなど）を1杯以上お願いしています</li></ul>
+        </div>
+        <div class="card">
+          <h4>通常 飲み放題（1時間）</h4>
+          <div class="yen">3,000<small>円〜</small></div>
+          <ul><li>22時までのご入店 3,000円</li><li>22時からのご入店 3,500円</li><li>延長 30分 1,500円</li></ul>
+        </div>
+        <div class="card">
+          <h4>飲み放題 UpGrade</h4>
+          <div class="yen">+1,000<small>円</small></div>
+          <ul><li>1時間 +1,000円</li><li>延長30分 +500円</li></ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- メニュー -->
+  <section id="menu">
+    <div class="box glass">
+      <div class="head"><span class="en">Menu</span><h2>メニュー（税抜き）</h2></div>
+      <div class="menu-grid">
+        <div class="mbox">
+          <h3>Amusement（もふーにょ）</h3>
+          <div class="row"><span>もふーにょドリンク</span><b>1,000円</b></div>
+          <div class="row"><span>もふーにょテキーラ</span><b>1,500円</b></div>
+          <div class="row"><span>もふーにょハブ酒</span><b>1,500円</b></div>
+          <div class="row"><span>テキーラ観覧車 HALF</span><b>15,000円</b></div>
+          <div class="row"><span>テキーラ観覧車 FULL</span><b>30,000円</b></div>
+        </div>
+        <div class="mbox">
+          <h3>シャンパン</h3>
+          <div class="row"><span>カフェ・ド・パリ（mini）</span><b>5,000円</b></div>
+          <div class="row"><span>オリシャン</span><b>20,000円</b></div>
+          <div class="row"><span>ベル・エポック</span><b>80,000円</b></div>
+          <div class="row"><span>アルマン・ド ゴールド</span><b>130,000円</b></div>
+        </div>
+        <div class="mbox">
+          <h3>ボトル・ドリンク</h3>
+          <div class="row"><span>キンミヤ焼酎／角ハイボール／レモンサワー</span><b>各6,000円</b></div>
+          <div class="row"><span>ラフロイグ10年</span><b>18,000円</b></div>
+          <div class="row"><span>ビール・ソフトドリンク</span><b>1,000円</b></div>
+          <div class="row"><span>お茶のピッチャー</span><b>2,000円</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- キャスト -->
+  <section id="cast">
+    <div class="box">
+      <div class="head"><span class="en">Cast</span><h2>キャスト <span class="badge">準備中</span></h2></div>
+      <div class="casts">
+        <div class="cast"><div class="ph">写真 準備中</div><p>キャスト1</p></div>
+        <div class="cast"><div class="ph">写真 準備中</div><p>キャスト2</p></div>
+        <div class="cast"><div class="ph">写真 準備中</div><p>キャスト3</p></div>
+        <div class="cast"><div class="ph">写真 準備中</div><p>キャスト4</p></div>
+        <div class="cast"><div class="ph">写真 準備中</div><p>キャスト5</p></div>
+      </div>
+      <p style="text-align:center;margin:18px 0 0;font-size:14px">出勤はXでお知らせしています</p>
+    </div>
+  </section>
+
+  <!-- お約束・FAQ -->
+  <section id="faq">
+    <div class="box">
+      <div class="head"><span class="en">Q &amp; A</span><h2>お約束とよくある質問</h2></div>
+      <div class="two">
+        <div class="panel">
+          <h3>お店のお約束 <span class="badge">案</span></h3>
+          <ol class="rules">
+            <li>キャストへのおさわりはご遠慮ください。</li>
+            <li>写真・動画の撮影は、チェキ以外はご遠慮ください。</li>
+            <li>キャストへの連絡先の交換・お誘いはご遠慮ください。</li>
+            <li>20歳未満の方の飲酒はできません。</li>
+            <li>ほかのお客様のご迷惑になることはご遠慮ください。</li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h3>よくある質問 <span class="badge">案</span></h3>
+          <details><summary>ひとりでも入れますか？</summary><p>もちろんです。おひとりさまも大歓迎です。</p></details>
+          <details><summary>予約は必要ですか？</summary><p>ご予約なしでも大丈夫です。</p></details>
+          <details><summary>カードは使えますか？</summary><p>クレジットカードとPayPayが使えます。</p></details>
+          <details><summary>時間の制限はありますか？</summary><p>チャージとセットは時間の制限はありません。飲み放題は1時間ごとで、30分ごとの延長になります。</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section id="access">
+    <div class="box">
+      <div class="head"><span class="en">Access</span><h2>店舗のご案内</h2></div>
+      <div class="access">
+        <dl class="info">
+          <dt>店名</dt><dd>もふのーす</dd>
+          <dt>住所</dt><dd>札幌市中央区南5条西5丁目<br>第三旭観光ビル 6階</dd>
+          <dt>営業時間</dt><dd>20:00〜翌1:00</dd>
+          <dt>定休日</dt><dd>日曜日 <span class="badge">要確認</span></dd>
+          <dt>お支払い</dt><dd>現金・クレジットカード・PayPay</dd>
+          <dt>お問い合わせ</dt><dd>Xのダイレクトメッセージから <span class="badge">要確認</span></dd>
+        </dl>
+        <div class="mapcard">
+          <div>
+            <p style="margin:0 0 12px;font-weight:900">すすきの駅から歩いてすぐ <span class="badge">要確認</span></p>
+            <a class="btn pink" href="https://www.google.com/maps/search/?api=1&query=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%975%E6%9D%A1%E8%A5%BF5%E4%B8%81%E7%9B%AE%20%E7%AC%AC%E4%B8%89%E6%97%AD%E8%A6%B3%E5%85%89%E3%83%93%E3%83%AB" target="_blank" rel="noopener">Googleマップで開く</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 求人 -->
+  <section id="recruit">
+    <div class="box">
+      <div class="head"><span class="en">Recruit</span><h2>キャスト募集 <span class="badge">中身は準備中</span></h2></div>
+      <div class="recruit">
+        <div class="catch">
+          <div class="big">Join us!</div>
+          <p>もふもふ衣装で、<br>いっしょにお店をつくりませんか？</p>
+          <div class="points"><span>未経験OK</span><span>週1日〜</span><span>衣装あり</span></div>
+          <span class="badge">特ちょうは案</span>
+          <div style="margin-top:16px"><a class="btn pink" href="https://x.com/mofnorth" target="_blank" rel="noopener">XのDMで応募する</a></div>
+          <p style="font-size:12px;font-weight:700;margin:8px 0 0">応募方法 <span class="badge">要確認</span></p>
+        </div>
+        <dl class="info">
+          <dt>お仕事</dt><dd>お客様とのおしゃべり、ドリンクづくり・提供</dd>
+          <dt>時給</dt><dd>準備中 <span class="badge">要確認</span></dd>
+          <dt>バック</dt><dd>ドリンク・シャンパンなどのバックあり <span class="badge">要確認</span></dd>
+          <dt>勤務時間</dt><dd>20:00〜翌1:00の間でシフト制 <span class="badge">要確認</span></dd>
+          <dt>応募資格</dt><dd>18歳以上（高校生不可） <span class="badge">要確認</span></dd>
+          <dt>勤務地</dt><dd>札幌市中央区南5条西5丁目 第三旭観光ビル6F</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="logo">Mofunosu</div>
+  <div class="sns">
+    <a class="btn line" href="https://x.com/mofnorth" target="_blank" rel="noopener">X @mofnorth</a>
+    <a class="btn line" href="https://mofnorth.base.shop" target="_blank" rel="noopener">オンラインショップ</a>
+  </div>
+  <div>© もふのーす（合同会社Noctua SPR）</div>
+  <div style="margin-top:4px">20歳未満の方の飲酒は法律で禁止されています。</div>
+</footer>
+</body>
+</html>
